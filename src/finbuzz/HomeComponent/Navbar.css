@@ -1,0 +1,16 @@
+/* Nav */
+
+.navbar-custom {
+    height: 100px;
+    background-color: white;
+}
+
+.navbar-custom .fsize {
+    /* Same Fsize*/
+    font-size: 14px;
+}
+
+.navbar-custom .navbar-divider {
+    height: 50%;
+    border: 1px solid black;
+}

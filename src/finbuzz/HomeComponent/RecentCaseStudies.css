@@ -1,0 +1,64 @@
+/* RecentCaseStudies */
+
+.recentCaseStudies {
+    position: relative;
+    background: rgb(243, 245, 247);
+    z-index: 1;
+}
+
+.recentCaseStudies::before {
+    width: 25%;
+    height: 50%;
+    content: "";
+    background: url(../../../public/Img/recentCaseStudiesBG.png) no-repeat scroll center/cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.recentCaseStudies .bg-img::after {
+    width: 100%;
+    height: 118%;
+    content: "";
+    background: url(../../../public/Img/recentCaseStudiesBG.png) no-repeat scroll center/cover;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+@media screen and (max-width:767px) and (min-width:567px) {
+    .recentCaseStudies .mediaQ-div {
+        padding-right: 150px !important;
+    }
+}
+
+.recentCaseStudies .float-div {
+    width: 90%;
+    position: absolute;
+    bottom: 15px;
+    z-index: 1;
+}
+
+.recentCaseStudies .float-div::after {
+    width: 30%;
+    height: 5%;
+    content: "";
+    background: rgb(250, 54, 10);
+    border-radius: inherit;
+    position: absolute;
+    left: 10%;
+    bottom: 0;
+    transition: all 0.8s;
+    z-index: -1;
+}
+
+.recentCaseStudies .box-hover:hover .float-div p, .recentCaseStudies .box-hover:hover .float-div h5{
+    color: white; 
+}
+
+.recentCaseStudies .box-hover:hover .float-div::after {
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

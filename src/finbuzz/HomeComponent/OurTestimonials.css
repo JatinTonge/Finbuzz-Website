@@ -1,0 +1,63 @@
+/* OurTestimonials */
+
+.ourTestimonials {
+    /* position: relative; */
+    /* background-color: #FA360A;
+    opacity: .88; */
+}
+
+.ourTestimonials .bg1 {
+    padding: 120px 0 200px 0;
+    position: relative;
+    background: url(../../../public/Img/ourTestimonialBG.jpg) no-repeat scroll center/cover;
+}
+
+.ourTestimonials .bg1::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: rgb(250, 54, 10);
+    position: absolute;
+    top: 0;
+    opacity: 0.89;
+}
+
+.ourTestimonials .bg1 .bg1-img1{
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+.ourTestimonials .bg1 .bg1-img2{
+    width: 30%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.ourTestimonials .bg2 {
+    position: relative;
+    top: -100px;
+    border-bottom: 1px solid rgb(186, 186, 186);
+}
+
+.ourTestimonials .bg2::after {
+    width: 50%;
+    height: 50%;
+    content: "";
+    background: url(../../../public/Img/ourTestimonialIcon.png) no-repeat scroll center/cover;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    z-index: -1;
+}
+
+.ourTestimonials .opacity-hover {
+    opacity: 0.25;
+    padding-bottom: 60px;
+}
+
+.ourTestimonials .opacity-hover:hover {
+    opacity: 1;
+}

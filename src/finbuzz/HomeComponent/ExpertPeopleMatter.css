@@ -1,0 +1,86 @@
+/* ExpertPeopleMatter */
+
+.expertPeopleMatter {
+    position: relative;
+}
+
+.expertPeopleMatter::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(../../../public/Img/expertPeopleMatterBG.png) no-repeat scroll center/cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.expertPeopleMatter .share-hover {
+    position: relative;
+}
+
+.expertPeopleMatter .share-hover:hover .share-position img {
+    transition: all 1s;
+}
+
+.expertPeopleMatter .share-hover:hover .share-position img {
+    transform: scale(1.01);
+}
+
+.expertPeopleMatter .share-hover:hover .share-position .share-list {
+    bottom: 0;
+    visibility: visible;
+}
+
+.expertPeopleMatter .share-hover .share-position {
+    position: relative;
+}
+
+.expertPeopleMatter .share-hover .share-position .share {
+    width: 17%;
+    height: 17%;
+    background-color: rgb(250, 54, 10);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.expertPeopleMatter .share-hover .share-position .share-list {
+    height: 67%;
+    width: 17%;
+    background-color: rgb(250, 54, 10);
+    position: absolute;
+    bottom: -51%;
+    right: 0;
+    visibility: hidden;
+    transition: all ease 1s;
+}
+
+.expertPeopleMatter .share-hover .share-position .share-list li {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expertPeopleMatter .share-hover .share-position .share-list li:hover {
+    background-color: white;
+}
+
+.expertPeopleMatter .share-hover .share-position .share-list li:hover a i{
+    color: rgb(250, 54, 10) !important;
+}
+
+.expertPeopleMatter .horizontal-divider {
+    position: relative;
+}
+
+.expertPeopleMatter .horizontal-divider::after {
+    width: 10%;
+    height: 10%;
+    background-color: rgb(250, 54, 10);
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 45%
+}

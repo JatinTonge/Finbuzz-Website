@@ -1,0 +1,77 @@
+/* WhatWeDo */
+
+.whatWeDo {
+    position: relative;
+}
+
+.whatWeDo::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url('../../../public/Img/whaWeDoBG.png') no-repeat scroll center/cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.whatWeDo .whatWeDo-card-img::before {
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    transition: all 0.8s;
+    z-index: 1;
+}
+
+.whatWeDo .whatWeDo-card-hover:hover .whatWeDo-card-img::before {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+.whatWeDo .whatWeDo-card-img {
+    position: relative;
+}
+
+.whatWeDo .whatWeDo-card-img::after {
+    width: 0;
+    height: 0;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: white;
+    transition: all 0.8s;
+}
+
+.whatWeDo .whatWeDo-card-hover:hover .whatWeDo-card-img::after {
+    width: 100%;
+    height: 100%;
+    opacity: 0.2;
+}
+
+.whatWeDo .whatWeDo-card-hover:hover h3 {
+    color: rgb(250, 54, 10);
+}
+
+.whatWeDo .whatWeDo-card-hover img {
+    transition: transform 1.3s;
+}
+
+.whatWeDo .whatWeDo-card-hover:hover img {
+    transform: scale(1.03);
+}
+
+.whatWeDo .whatWeDo-card-hover .float-img {
+    width: 85px;
+    height: 85px;
+    padding: 15px;
+    background-color: rgb(255, 235, 228);
+    border: 10px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: -40px;
+}

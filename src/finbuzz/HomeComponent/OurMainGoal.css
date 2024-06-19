@@ -1,0 +1,105 @@
+/* OurMainGoal */
+
+.ourMainGoal {
+    position: relative;
+    padding-top: 100px !important;
+}
+
+.ourMainGoal::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url(../../../public/Img/ourMainGoalBG.png) no-repeat scroll center/contain;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.ourMainGoal .ourMainGoal-box {
+    position: relative;
+    top: -100px;
+}
+
+.ourMainGoal .ourMainGoal-box::before {
+    width: 20%;
+    height: 100%;
+    content: "";
+    background: url(../../../public/Img/shape.png) no-repeat scroll center/contain,
+        url(../../../public/Img/shape2.png) no-repeat scroll top/contain;
+    position: absolute;
+    top: 0;
+}
+
+.ourMainGoal .ourMainGoal-box::after {
+    width: 20%;
+    height: 100%;
+    content: "";
+    background: url(../../../public/Img/shape.png) no-repeat scroll bottom/contain,
+        url(../../../public/Img/shape2.png) no-repeat scroll center/contain;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media screen and (max-width:567px) {
+    .ourMainGoal .mImg {
+        width: 350px;
+
+    }
+
+    .ourMainGoal .imgfloat-1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .ourMainGoal .ourMainGoalImg::after{
+        display: none;   
+    }
+}
+
+.ourMainGoal .ourMainGoalImg::after{
+    width: 35%;
+    height: 35%;
+    content: "";
+    background: url(../../../public/Img/shapeBG.png) no-repeat scroll center/cover;
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+    z-index: -1;
+}
+
+.ourMainGoal .imgfloat-1 {
+    position: absolute;
+    top: 0;
+    right: 22px;
+}
+
+.ourMainGoal .imgfloat-2 {
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    padding-top: 18px;
+    padding-left: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.ourMainGoal .row-hover img {
+    transition: transform 0.5s;
+}
+
+.ourMainGoal .row-hover:hover img {
+    transform: scale(1.05);
+}
+
+.ourMainGoal .row-hover:hover span {
+    border-color: rgb(250, 54, 10) !important;
+
+}
+
+.ourMainGoal .row-hover:hover h5 {
+    color: rgb(250, 54, 10) !important;
+}

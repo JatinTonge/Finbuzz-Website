@@ -1,0 +1,19 @@
+/* Header */
+
+header .topbar {
+    height: 50px;
+    background-color: rgb(250, 54, 10);
+}
+
+@media screen and (max-width:992px) {
+    header .topbar {
+        background-color: white;
+    }
+}
+
+header .topbar .divider {
+    border: 1px solid white;
+    height: 100%;
+    color: white;
+    transform: skew(-20deg);
+}

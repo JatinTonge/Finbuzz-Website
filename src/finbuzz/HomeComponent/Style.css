@@ -1,0 +1,42 @@
+/* Same Class */
+
+.bg-color {
+    /* Same BG Color*/
+    background-color: rgb(250, 54, 10);
+}
+
+.text-color {
+    /* Same Text Color*/
+    color: rgb(250, 54, 10);
+}
+
+.btn-custom {
+    /* Same Btn Custom*/
+    color: white;
+    background-color: rgb(250, 54, 10);
+    border-color: rgb(250, 54, 10);
+}
+
+.custom-space {
+    /* Same Space Custom*/
+    padding: 120px 0;
+}
+
+.title {
+    /* Same Title Custom*/
+    border: 2px solid rgb(250, 54, 10);
+    color: rgb(250, 54, 10);
+    display: inline-block;
+}
+
+.title-white {
+    /* Same Title Custom*/
+    border: 2px solid grey;
+    color: white;
+    display: inline-block;
+}
+
+.aHover:hover {
+    /* Same Anchor Hover Custom*/
+    color: rgb(250, 54, 10) !important;
+}

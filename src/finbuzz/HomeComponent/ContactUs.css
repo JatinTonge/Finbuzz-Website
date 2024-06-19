@@ -1,0 +1,27 @@
+/* ContactUs */
+
+.contactUs {
+    background: url(../../../public/Img/contactUsBG.jpg) no-repeat scroll center/cover;
+}
+
+.contactUs .contact {
+    background: rgba(255, 255, 255, .1);
+    position: relative;
+    z-index: 1;
+}
+
+.contactUs .contact::before {
+    width: 1%;
+    height: 100%;
+    content: "";
+    background-color: #fa360a;
+    border-radius: 0px 3px 3px 0px;
+    position: absolute;
+    left: 0px;
+    transition: all 0.8s ease-out;
+    z-index: -1;
+}
+
+.contactUs .contact-hover:hover .contact::before {
+    width: 100%;
+}

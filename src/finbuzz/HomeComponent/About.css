@@ -1,0 +1,109 @@
+/* About */
+
+.about {
+    width: 100%;
+    /* height: 170vh; */
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.about::after {
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: url('../../../public/Img/About.png') no-repeat scroll center/cover;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.about .about-container {
+    position: relative;
+    top: -80px;
+}
+
+@media screen and (max-width:768px) {
+    .about .about-container {
+        top: 0;
+        margin-top: 80px;
+    }
+}
+
+.about .about-container .card-hover {
+    transition: transform 1s;
+}
+
+.about .about-container .card-hover:hover {
+    transform: translateY(-30px);
+}
+
+.about .about-container .card-body-set {
+    position: relative;
+    top: -55px;
+}
+
+.about .about-container .card-body-set .img1,
+.img2,
+.img3 {
+    width: 90px;
+    height: 90px;
+    border: 4px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .about-container .card-body-set .img1 {
+    background-color: rgb(250, 23, 52);
+}
+
+.about .about-container .card-body-set .img2 {
+    background-color: rgb(0, 195, 183);
+}
+
+.about .about-container .card-body-set .img3 {
+    background-color: rgb(255, 204, 0);
+}
+
+.about .about-img {
+    height: 550px;
+    z-index: 2;
+    position: relative;
+    top: 65px;
+}
+
+.about .about-img-bg{
+    position: absolute;
+    top: 10px;
+    left: -60px;
+}
+
+.about .about-div{
+    position: absolute;
+    bottom: -58px;
+    left: 0px;
+    z-index: 2;
+}
+
+.about .about-main {
+    padding: 80px 0;
+    padding-left: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.about .about-main::before {
+    width: 150%;
+    height: 100%;
+    content: "";
+    background-color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.about .about-main .img-w {
+    border: 10px solid white;
+}

@@ -1,0 +1,30 @@
+/* WhatsNewsBlog */
+
+.whatsNewsBlog {
+    background: url(../../../public/Img/whatsNews&BlogBG.png) no-repeat scroll center/cover;
+}
+
+.whatsNewsBlog .float-date {
+    position: relative;
+}
+
+.whatsNewsBlog .float-date img {
+    transition: all 0.8s;
+}
+
+.whatsNewsBlog .float-date img:hover {
+    transform: scale(1.05);
+}
+
+.whatsNewsBlog .float-date .float-date-div {
+    width: 50%;
+    height: 20%;
+    background-color: #fa360a;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

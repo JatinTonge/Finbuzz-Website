@@ -1,0 +1,34 @@
+/* SubscribeUs */
+
+.subscribeUs {
+    background-color: #fa360a;
+}
+
+.subscribeUs input {
+    padding: 14px 20px !important;
+}
+
+.subscribeUs .input1 {
+    background-color: #ff4e26;
+    border-radius: 48px 48px;
+    border: none;
+}
+
+.subscribeUs .input1::placeholder {
+    color: white;
+}
+
+.subscribeUs .input2 {
+    border-radius: 48px 48px;
+    box-shadow: 0 7px 24px 0 rgb(0 0 0 / 32%);
+}
+
+.subscribeUs .input2:hover {
+    box-shadow: none;
+}
+
+@media screen and (max-width:576px) {
+    .subscribeUs .input1 {
+        border-radius: 0px;
+    }
+}
